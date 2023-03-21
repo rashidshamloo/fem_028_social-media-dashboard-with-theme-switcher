@@ -46,6 +46,7 @@ This is a solution to the [Social Media Dashboard with Theme Switcher challenge 
 - Using TypeScript in Vue.js
 - How switching between dark mode and light mode works in Tailwind CSS
 - Implementing a dark/light mode toggle using Tailwind CSS and JavaScript
+- Using "localStorage" to store the theme mode
 - Automatic Tailwind CSS class sorting using Prettier
 - More experience in using Grid and Flex Box
 
