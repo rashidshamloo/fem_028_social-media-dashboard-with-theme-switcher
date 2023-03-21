@@ -6,6 +6,10 @@ const props = defineProps({
     type: Number,
     required: false,
   },
+  enableDarkMode: {
+    type: Boolean,
+    required: true,
+  },
 });
 
 const emits = defineEmits(["toggle"]);
@@ -32,7 +36,11 @@ const emits = defineEmits(["toggle"]);
       class="text flex items-center justify-between gap-4 text-[0.75rem] font-bold transition-all duration-500 lg:w-auto lg:text-[0.8rem]"
     >
       <p class="text-sm">Dark Mode</p>
-      <Switch id="theme-toggle" :checked="false" @toggle="$emit('toggle')" />
+      <Switch
+        id="theme-toggle"
+        :checked="!enableDarkMode"
+        @toggle="$emit('toggle')"
+      />
     </div>
   </header>
 </template>

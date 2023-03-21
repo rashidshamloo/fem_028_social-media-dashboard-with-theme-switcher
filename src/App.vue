@@ -5,15 +5,27 @@ import Footer from "./components/Footer.vue";
 import SocialStat from "./components/SocialStat.vue";
 import SocialOverview from "./components/SocialOverview.vue";
 import data from "./data/data.json";
-const enableDarkMode = ref(true);
+
+const enableDarkMode = ref(
+  localStorage.getItem("dark-mode") === "true" ||
+    !localStorage.getItem("dark-mode")
+    ? true
+    : false
+);
+enableDarkMode.value && document.documentElement.classList.add("dark");
 function toggleDarkMode() {
   enableDarkMode.value = !enableDarkMode.value;
   document.documentElement.classList.toggle("dark");
+  localStorage.setItem("dark-mode", String(enableDarkMode.value));
 }
 </script>
 
 <template>
-  <Header :totalFollowers="23004" @toggle="toggleDarkMode()" />
+  <Header
+    :totalFollowers="23004"
+    @toggle="toggleDarkMode()"
+    :enableDarkMode="enableDarkMode"
+  />
   <main>
     <div
       class="mt-11 inline-grid min-w-[88%] grid-cols-1 gap-5 sm:min-w-[33.75rem] sm:grid-cols-2 sm:gap-8 lg:min-w-full lg:grid-cols-4"
