@@ -1,0 +1,46 @@
+[
+  {
+    "platform": "facebook",
+    "handle": "@nathanf",
+    "users": "1987",
+    "userTitle": "follower",
+    "change": "+12",
+    "stats": [
+      { "title": "Page Views", "amount": "87", "change": "+3" },
+      { "title": "Likes", "amount": "52", "change": "-2" }
+    ]
+  },
+  {
+    "platform": "twitter",
+    "handle": "@nathanf",
+    "users": "1044",
+    "userTitle": "follower",
+    "change": "+99",
+    "stats": [
+      { "title": "Retweets", "amount": "117", "change": "+303" },
+      { "title": "Likes", "amount": "507", "change": "+553" }
+    ]
+  },
+  {
+    "platform": "instagram",
+    "handle": "@realnathanf",
+    "users": "11k",
+    "userTitle": "follower",
+    "change": "+1099",
+    "stats": [
+      { "title": "Likes", "amount": "5462", "change": "+2257" },
+      { "title": "Profile Views", "amount": "52k", "change": "+1375" }
+    ]
+  },
+  {
+    "platform": "youtube",
+    "handle": "Nathan F.",
+    "users": "8239",
+    "userTitle": "subscriber",
+    "change": "-144",
+    "stats": [
+      { "title": "Likes", "amount": "107", "change": "-19" },
+      { "title": "Total Views", "amount": "1407", "change": "-12" }
+    ]
+  }
+]
