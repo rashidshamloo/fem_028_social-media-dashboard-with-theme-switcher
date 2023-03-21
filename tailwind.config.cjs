@@ -35,7 +35,8 @@ module.exports = {
         toggleDark: "linear-gradient( hsl(210, 78%, 56%), hsl(146, 68%, 55%) )",
         bgDark:
           "linear-gradient( hsl(232, 19%, 15%) 0 15.5rem, hsl(230, 17%, 14%) 15.5rem )",
-        bgLight: "linear-gradient( hsl(225, 100%, 98%) 0 25%, white 25% )",
+        bgLight:
+          "linear-gradient( hsl(225, 100%, 98%) 0 15.5rem, white 15.5rem )",
       },
       gridTemplateAreas: {
         large: ["a1 a2", "a3 a4"],
