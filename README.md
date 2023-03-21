@@ -20,10 +20,12 @@ This is a solution to the [Social Media Dashboard with Theme Switcher challenge 
 - Desktop
 
 ![](./screenshot-desktop.png)
+![](./screenshot-desktop-light.png)
 
 - Mobile
 
 ![](./screenshot-mobile.png)
+![](./screenshot-mobile-light.png)
 
 ### Links
 
