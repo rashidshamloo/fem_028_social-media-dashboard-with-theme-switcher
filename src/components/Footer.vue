@@ -1,5 +1,7 @@
 <template>
-  <footer class="mt-6 text-center text-xs dark:text-desaturatedBlue">
+  <footer
+    class="mt-6 mb-2 text-center text-xs dark:text-desaturatedBlue sm:mb-0"
+  >
     <p>Developed by Rashid Shamloo</p>
     <ul
       class="flex items-center justify-center gap-2 text-base [&_a]:transition-all [&_a]:duration-500 hover:[&_a]:text-darkDesaturatedBlue dark:hover:[&_a]:text-lightGrayishBlueHover"
