@@ -16,7 +16,7 @@ const textColor = () => {
     <div class="mt-8 flex items-center justify-center gap-2 text-sm">
       <img
         :src="'images/icon-' + props.data?.platform + '.svg'"
-        alt=""
+        :alt="props.data?.platform"
         aria-hidden="true"
       />
       <p class="text-xs font-bold">{{ props.data?.handle }}</p>
@@ -39,6 +39,8 @@ const textColor = () => {
         :src="`images/icon-${
           props.data?.change[0] === '+' ? 'up' : 'down'
         }.svg`"
+        alt=""
+        aria-hidden="true"
       />
       {{ props.data?.change.substring(1) }} Today
     </div>

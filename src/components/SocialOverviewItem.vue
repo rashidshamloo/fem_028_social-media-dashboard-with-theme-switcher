@@ -8,16 +8,13 @@ const textColor = () => {
 
 <template>
   <div
-    :class="[
-      'before:bg-' + props.data?.platform,
-      'relative mx-auto flex min-h-[7.75rem] w-full max-w-[88%] flex-wrap overflow-hidden rounded-lg bg-lightGrayishBlue pl-6 pr-7 pt-7 pb-3 before:absolute before:top-0 before:left-0 before:right-0 before:h-[0.225rem] hover:cursor-pointer hover:bg-lightGrayishBlueHover dark:bg-darkDesaturatedBlue dark:hover:bg-darkDesaturatedBlueHover sm:max-w-[15.875rem]',
-    ]"
+    class="relative mx-auto flex min-h-[7.75rem] w-full max-w-[88%] flex-wrap overflow-hidden rounded-lg bg-lightGrayishBlue pl-6 pr-7 pt-7 pb-3 hover:cursor-pointer hover:bg-lightGrayishBlueHover dark:bg-darkDesaturatedBlue dark:hover:bg-darkDesaturatedBlueHover sm:max-w-[15.875rem]"
   >
     <p class="w-1/2 text-sm font-bold">{{ props.data?.title }}</p>
     <div class="flex w-1/2 items-start justify-end">
       <img
         :src="'images/icon-' + platform + '.svg'"
-        alt=""
+        :alt="platform"
         aria-hidden="true"
       />
     </div>
@@ -36,6 +33,8 @@ const textColor = () => {
         :src="`images/icon-${
           props.data?.change[0] === '+' ? 'up' : 'down'
         }.svg`"
+        alt=""
+        aria-hidden="true"
       />
       {{ props.data?.change.substring(1) }}%
     </div>
