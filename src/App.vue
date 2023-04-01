@@ -26,14 +26,14 @@ function toggleDarkMode() {
     @toggle="toggleDarkMode()"
     :enableDarkMode="enableDarkMode"
   />
-  <main>
+  <main class="w-full text-center sm:w-auto">
     <div
       class="mt-11 inline-grid min-w-[88%] grid-cols-1 gap-5 sm:min-w-[33.75rem] sm:grid-cols-2 sm:gap-8 lg:min-w-full lg:grid-cols-4"
     >
       <SocialStat v-for="item in data" :data="item" />
     </div>
     <h2
-      class="mt-12 w-full max-w-[88%] text-left text-2xl font-bold text-veryDarkBlue dark:text-white lg:max-w-full"
+      class="mx-auto mt-12 w-full max-w-[88%] text-left text-2xl font-bold text-veryDarkBlue dark:text-white sm:mx-0 lg:max-w-full"
     >
       Overview - Today
     </h2>
